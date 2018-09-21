@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Paint </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<body>
+	<div id="container">
+		<canvas id="canvas" height="550px" width="820px"></canvas>
+		<div id="controls">
+			<input type="checkbox" name="tool" class="tool" data-id="pencil" style="background-image: url('images/pencil.png');" title="pencil"></input>
+			<input type="checkbox" name="tool" class="tool" data-id="fill" style="background-image: url('images/fill.png');" title="fill"></input>
+			<input type="checkbox" name="tool" class="tool" data-id="rubber" style="background-image: url('images/rubber.png');" title="rubber"></input>
+			<input type="checkbox" id="clear" name="tool" class="tool" style="background-image: url('images/clear.png');" title="clear all"></input>
+			<input type="checkbox" name="tool" class="tool" data-id="rectangle" style="background-image: url('images/rectangle.png');" title="rectangle"></input>
+			<input type="checkbox" name="tool" class="tool" data-id="line" style="background-image: url('images/line.png');" title="line"></input>
+			
+			<input type="checkbox" name="color" class="tool color" style="background-color: white;"></input>
+			<input type="checkbox" name="color" class="tool color" style="background-color: lightgray;"></input>
+			<input type="checkbox" name="color" class="tool color" style="background-color: pink;"></input>
+			<input type="checkbox" name="color" class="tool color" style="background-color: yellow;"></input>
+			<input type="checkbox" name="color" class="tool color" style="background-color: blue;"></input>
+			<input type="checkbox" name="color" class="tool color" style="background-color: green;"></input>
+			<input type="checkbox" name="color" class="tool color" style="background-color: red;"></input>
+			<input type="checkbox" name="color" class="tool color" style="background-color: black;"></input>
+
+			<select id="lineWidth">
+				<option value="" selected disabled hidden>Line</option>
+				<option value="1"> 1px </option>
+				<option value="2"> 2px </option>
+				<option value="3"> 3px </option>
+				<option value="4"> 4px </option>
+				<option value="5"> 5px </option>
+				<option value="6"> 6px </option>
+				<option value="7"> 7px </option>
+				<option value="8"> 8px </option>
+				<option value="9"> 9px </option>
+				<option value="10"> 10px </option>
+			</select>
+		</div>
+	</div>
+</body>
+</html>
